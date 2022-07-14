@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Satisfy", cursive;
+  font-size: 2rem;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Ephesis", cursive;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: chocolate;
+  text-align: center;
+  font-style: oblique;
+}
+
+h3 {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.carousel-inner img {
+  width: 100px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer small {
+  margin: 20px 0;
+}
+
+a {
+  color: #737373;
+}
+
+a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links:active, .footer-links a:focus, .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+}
+header {
+  background-color: black;
+  position: static;
+}
+
+main {
+  padding-top: 20px;
+  background-color: #85FFBD;
+}
+
+.btn btn-primary {
+  background-color: black;
+}
+
+.seccion-portada {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+  margin: 40px 40px 40px 30px;
+  box-shadow: 18px -14px 27px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 18px -14px 27px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px -14px 27px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+}
+.seccion-portada p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.publicidad {
+  margin-top: 20px;
+  background-color: white;
+  animation-name: publicidadenmovimiento;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+
+.card-group p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #33383c;
+  font-size: 1rem;
+}
+
+@keyframes publicidadenmovimiento {
+  0% {
+    background-color: white;
+    color: black;
+    left: 300px;
+    top: 200px;
+  }
+  30% {
+    background-color: violet;
+    left: 300px;
+    top: 200px;
+  }
+  60% {
+    background-color: #4158D0;
+    color: white;
+    left: 300px;
+    top: 200%;
+  }
+  90% {
+    background-color: black;
+    left: 300px;
+    right: 200px;
+  }
+}
+.grilla-fotos, .casamiento {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "imagen1  imagen2 imagen3 imagen4";
+  gap: 10px;
+  object-fit: cover;
+  text-align: justify;
+}
+.grilla-fotos img, .casamiento img {
+  height: 400px;
+  width: 300px;
+  box-shadow: 10px -23px 34px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px -23px 34px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px -23px 34px 0px rgba(0, 0, 0, 0.75);
+}
+
+.galeria-imagen1 {
+  grid-area: imagen1;
+}
+
+.galeria-imagen2 {
+  grid-area: imagen2;
+}
+
+.galeria-imagen3 {
+  grid-area: imagen3;
+}
+
+.galeria-imagen4 {
+  grid-area: imagen4;
+}
+
+/*# sourceMappingURL=estilos.css.map */

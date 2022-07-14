@@ -1,0 +1,62 @@
+$p: ( 
+        main:grey,
+        footer:white,
+) ;
+
+@each $tipografia-p, $color in p {
+   .p--#{$tipografia-p} {
+       background-color: $color;
+   }
+}
+.grilla-fotos{
+
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"imagen1  imagen2 imagen3 imagen4";
+    gap: 10px;
+    img{
+        height: 400px;
+        width: 300px;
+         box-shadow: 10px -23px 34px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px -23px 34px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px -23px 34px 0px rgba(0,0,0,0.75);
+      }
+        object-fit: cover;
+       
+        text-align: justify;
+    }
+      
+      .galeria-imagen1{
+        grid-area:imagen1;
+    }
+    .galeria-imagen2{
+        grid-area: imagen2;
+    }
+    .galeria-imagen3{
+        grid-area: imagen3;
+    }
+       .galeria-imagen4{
+        grid-area: imagen4;
+       }
+    
+       
+.casamiento{
+        @extend .grilla-fotos;
+        
+    }
+    
+  
+    
+
+
+
+    
+
+
+	
+
+    
+

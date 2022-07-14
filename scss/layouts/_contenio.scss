@@ -1,0 +1,57 @@
+
+.seccion-portada{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: white;
+margin: 40px 40px 40px 30px;
+box-shadow: 18px -14px 27px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 18px -14px 27px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 18px -14px 27px 0px rgba(0,0,0,0.75);
+border-radius: 6px;
+
+ p{
+    font-size: 3rem;
+    text-align: center;
+}
+}
+
+
+
+.publicidad{
+    margin-top: 20px;
+    background-color: white;
+    animation-name: publicidadenmovimiento;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+
+
+.card-group p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #33383c;
+    font-size: 1rem;
+}
+@keyframes publicidadenmovimiento{
+    0%{
+        background-color:white;
+        color: black;
+        left: 300px;
+    top: 200px;}
+
+30%{
+    background-color: violet;
+    left: 300px;
+    top: 200px;
+}
+60%{
+    background-color: #4158D0;
+    color: white;
+    left: 300px;
+    top: 200%;
+}
+90%{
+    background-color: black;
+    left: 300px;
+    right: 200px;
+}
+} 
